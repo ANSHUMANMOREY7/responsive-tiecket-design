@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TICKET (RTC)</title>
+    <style>
+        
+        /* table */
+        .ticket-container {
+
+            height: 300px;
+            width: 800px;
+            margin: 90px auto;
+            border-radius: 20px;
+            display: flex;
+           
+
+        }
+
+        .part1 {
+            background-color: rgb(214, 200, 152);
+            width: 35%;
+            border-radius: 20px;
+            box-shadow: 0px 0px 19px 0px;
+            border: solid 1px rgba(36, 22, 22, 0.61);
+            border-right: 2px dashed rgba(175, 154, 154, 0.61);
+            padding-left: 10px;
+
+        }
+
+        .part2 {
+            background-color: rgb(214, 200, 152);
+            width: 65%;
+            border-radius: 20px;
+            box-shadow: 0px 0px 19px 0px;
+            border: solid 1px rgba(36, 22, 22, 0.61);
+            border-left: 2px dashed rgba(36, 25, 25, 0.61);
+            
+            padding-left: 10px;
+        }
+
+        .ticket {
+            
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+        }
+        .Event{
+            font-family: sans-serif;
+            font-size: 17px;
+            
+
+        }
+        .t-logo{
+            height: 160px;
+        }
+
+             /* mobile */
+        @media ( max-width:400px ) 
+        { .ticket-container 
+        {
+          flex-direction: column;
+          margin-left: 80px;
+          margin: 50 auto;
+          height: 500px;
+          width: 600px;
+        }
+    
+         .part1 {
+            
+            border-bottom: 2px dashed rgba(175, 154, 154, 0.61);
+            border-right: 2px solid rgba(71, 53, 53, 0.61);
+            height: 40%;
+            width: 30%;
+        }
+        .part2 {
+          
+            width: 30%;
+            height: 60%;
+            border-top: 2px dashed rgba(36, 25, 25, 0.61);
+            border-left: 2px solid rgba(36, 25, 25, 0.61);
+
+            
+            
+        }
+        .ticket {
+            
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 13px;
+        }
+        .Event{
+            font-family: sans-serif;
+            font-size: 13px;
+            
+
+        }
+ 
+        .t-logo{
+            height: 110px;
+        }
+        
+        }
+     
+    </style>
+</head>
+
+<body>
+    <div class="ticket-container">
+        <div class="part1">
+            <span class="ticket">
+                Ticket no:123456
+                <p class="Event"> Event: RTC Student Meetup </p>
+                <img src="friends_1000374.png" alt="friends" class="t-logo">
+
+            </span>
+        </div>
+        <div class="part2">
+            <span class="ticket">
+                Ticket no:123456
+                <p class="Event"> Event: RTC Student Meetup </p>
+                <img src="friends_1000374.png" alt="friends" class="t-logo">
+
+
+            </span>
+        </div>
+
+    </div>
+</body>
+
+</html>
